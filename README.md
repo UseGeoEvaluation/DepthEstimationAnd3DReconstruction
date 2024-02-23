@@ -1,23 +1,16 @@
 # About
 
-TODO: change abstract
-
->iVS3D is a framework for intelligent pre-processing of image sequences. iVS3D is able to down sample entire videos to a specific frame rate, as well as to resize and crop the individual images. Furthermore, thanks to the modular architecture, it is easy to develop and integrate plugins with additional algorithms. We provide three plugins as baseline methods that enable an intelligent selection of suitable images and can enrichthem with additional information. To filter out images affected by motion blur, we developed a plugin that detects these frames and also searches the spatial neighbourhood for suitable images as replacements. The second plugin uses optical flow to detect redundant imagescaused by a temporarily stationary camera. In our experiments, we show how this approach leads to a more balanced image sampling if the camera speed varies, and that excluding such redundant images leads to a time saving of 8.1 % for our sequences.
+>Depth estimation and 3D model reconstruction from aerial imagery is an important task in photogrammetry, remote sensing, and computer vision. To compare the performance of different image-based approaches, this study presents a benchmark for UAV-based aerial imagery using the UseGeo dataset. The contributions include the release of various evaluation routines on GitHub, as well as a comprehensive comparison of baseline approaches, such as methods for offline multi-view 3D reconstruction resulting in point clouds and triangle meshes, online multi-view depth estimation, as well as single-image depth estimation using self-supervised deep learning. Our analyses show that each method excels in a different category: the depth estimation from COLMAP outperforms that of the other approaches, ACMMP achieves the lowest error and highest completeness for point clouds, while OpenMVS produces triangle meshes with the lowest error. Among the online methods for depth estimation, the approach from the Plane-Sweep Library outperforms the FaSS-MVS approach, while the latter achieves the lowest processing time. And even though the particularly challenging nature of the dataset and the small amount of training data leads to a significantly higher error in the results of the self-supervised single-image depth estimation approach, it outperforms all other approaches in terms of processing time and frame rate.
 
 TODO: change LINK
 
-[Link to paper] submitted for the 16th International Symposium on Visual Computing (ISVC 2021).
+[Link to paper] submitted .
 
 If you use this project for your research, please cite:
 
 TODO: change bibtex
 
-    @inproceedings{schoenberger2016sfm,
-        author={Sch\"{o}nberger, Johannes Lutz and Frahm, Jan-Michael},
-        title={Structure-from-Motion Revisited},
-        booktitle={Conference on Computer Vision and Pattern Recognition (CVPR)},
-        year={2016},
-    }
+
 
 Link to the dataset: https://github.com/3DOM-FBK/usegeo
 
