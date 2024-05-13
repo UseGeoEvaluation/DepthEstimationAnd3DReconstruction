@@ -1,16 +1,23 @@
 # About
 
->Depth estimation and 3D model reconstruction from aerial imagery is an important task in photogrammetry, remote sensing, and computer vision. To compare the performance of different image-based approaches, this study presents a benchmark for UAV-based aerial imagery using the UseGeo dataset. The contributions include the release of various evaluation routines on GitHub, as well as a comprehensive comparison of baseline approaches, such as methods for offline multi-view 3D reconstruction resulting in point clouds and triangle meshes, online multi-view depth estimation, as well as single-image depth estimation using self-supervised deep learning. Our analyses show that each method excels in a different category: the depth estimation from COLMAP outperforms that of the other approaches, ACMMP achieves the lowest error and highest completeness for point clouds, while OpenMVS produces triangle meshes with the lowest error. Among the online methods for depth estimation, the approach from the Plane-Sweep Library outperforms the FaSS-MVS approach, while the latter achieves the lowest processing time. And even though the particularly challenging nature of the dataset and the small amount of training data leads to a significantly higher error in the results of the self-supervised single-image depth estimation approach, it outperforms all other approaches in terms of processing time and frame rate.
+>Depth estimation and 3D model reconstruction from aerial imagery is an important task in photogrammetry, remote sensing, and computer vision. To compare the performance of different image-based approaches, this study presents a benchmark for UAV-based aerial imagery using the UseGeo dataset. The contributions include the release of various evaluation routines on GitHub, as well as a comprehensive comparison of baseline approaches, such as methods for offline multi-view 3D reconstruction resulting in point clouds and triangle meshes, online multi-view depth estimation, as well as single-image depth estimation using self-supervised deep learning. With the release of our evaluation routines, we aim to provide a universal protocol for the evaluation of depth estimation and 3D reconstruction methods on the UseGeo dataset. The conducted experiments and analyses show that each method excels in a different category: the depth estimation from COLMAP outperforms that of the other approaches, ACMMP achieves the lowest error and highest completeness for point clouds, while OpenMVS produces triangle meshes with the lowest error. Among the online methods for depth estimation, the approach from the Plane-Sweep Library outperforms the FaSS-MVS approach, while the latter achieves the lowest processing time. And even though the particularly challenging nature of the dataset and the small amount of training data leads to a significantly higher error in the results of the self-supervised single-image depth estimation approach, it outperforms all other approaches in terms of processing time and frame rate. In our evaluation, we have also considered modern learning-based approaches that can be used for image-based 3D reconstruction, such as NeRFs. However, due to the significantly lower quality of the resulting 3D models, we have only included a qualitative comparison of such methods against conventional approaches in the scope of this work.
 
-TODO: change LINK
-
-[Link to paper] submitted .
+Link to paper: https://doi.org/10.1016/j.ophoto.2024.100065.
 
 If you use this project for your research, please cite:
 
-TODO: change bibtex
-
-
+```bibtex
+@Article{Hermann2024usegeo,
+    author  = {M. Hermann and M. Weinmann and F. Nex and E.K. Stathopoulou and F. Remondino and B. Jutzi and B. Ruf},
+    title   = {Depth estimation and 3D reconstruction from UAV-borne imagery: Evaluation on the UseGeo dataset},
+    journal = {ISPRS Open Journal of Photogrammetry and Remote Sensing},
+    pages   = {100065},
+    year    = {2024},
+    issn    = {2667-3932},
+    doi     = {https://doi.org/10.1016/j.ophoto.2024.100065},
+    url     = {https://www.sciencedirect.com/science/article/pii/S2667393224000085},
+}
+```
 
 Link to the dataset: https://github.com/3DOM-FBK/usegeo
 
